@@ -18,7 +18,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Changa+One&family=Roboto:wght@500&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css"/>
+    <script src='./js/main.js'></script>
 </head>
 
 <body class="body">
@@ -96,7 +97,41 @@
         </div>
     </div>
     <div class="overlay"></div>
-    <section class="program">
+  <!--testData  -->
+  <section class="program">
+    <div class="container container--fluid">
+    <div class="program__options">
+        <div class="program__options-list" id="programsData"><!-- Program main menu --></div>
+        <div class="program__options-description" id="programDescription"><!-- Program active Menu description --></div>
+    </div>
+
+    <div class="program__menu">
+        <div class="program__menu-content border-gradient1 border-gradient--color1">
+            <div class="program__menu-content-border-cover border-gradient2 border-gradient--color2">
+                <div class="program__menu-info">
+                    <div class="program__menu-info-title">Меню</div>
+                    <!-- days -->
+                    <div class="program__menu-info-days days--express" id='programDays'><!--DAYS_ITEM--></div>
+                     <!-- days -->
+                    </div>
+                     <!-- content -->
+                     <div class="program__menu-table" id="programDayFoods"> <!--PROGRAM_DAY_FOODS  --></div>
+                     <!-- content -->
+                </div>
+            </div>
+            <!-- price -->
+                <div class="program__menu-prices">
+                    <div class="program__menu-prices-title">Цены грн/день</div>
+                    <div class="program__menu-prices-info" id="programPrice"></div>
+                </div>
+            <!-- price -->
+        </div>
+    </div>
+    </div>
+  </section>
+    <!-- testData   -->
+
+    <!-- <section class="program">
         <div class="container container--fluid">
             <div class="program__options">
                 <div class="program__options-list">
@@ -129,6 +164,7 @@
                     <div class="program__options-description-item">Программа здорового питания Maxi fit. Отлично подходит для поддержания формы или набора мышечной массы для мужчин.</div>
                 </div>
             </div>
+          
             <div class="program__menu" id="menu">
                 <div class="program__menu-content border-gradient1 border-gradient--color1">
                     <div class="program__menu-content-border-cover border-gradient2 border-gradient--color2">
@@ -1418,7 +1454,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <section class="dishes">
         <div class="container container--fluid">
             <h3 class="dishes__title whitebackground-title">НАШИ БЛЮДА</h3>
@@ -2029,7 +2065,38 @@
         req.send(new FormData(event.target));
         }
         </script>
-    <script src="js/main.min.js"></script>
+    <!-- <script src="js/main.min.js"></script> -->
+
+    <style>
+        .program__menu-info-days,
+        .program__menu-table,
+        .program__menu-table-content,
+        .program__menu-prices-info {
+            display: block;
+        }
+
+        .program__menu-info-days,
+        .program__menu-table-content {
+            display: flex;
+        }
+
+        .program__menu-table {
+            display: flex;
+            min-height: 390px; 
+            min-height: 390px;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+        }
+        .program__menu-table-content {
+            min-height: auto;
+        }
+    </style>
+
 </body>
 
 </html>
