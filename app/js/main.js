@@ -37,7 +37,7 @@ const dataSet = {
             description: "blabla321",
             prices: [ 
                 {
-                    price: "315",
+                    price: "3213",
                     name: "Тест-день"
                 },
                 {
