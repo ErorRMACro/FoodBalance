@@ -1072,6 +1072,7 @@ document.addEventListener('DOMContentLoaded', () => {
             item.addEventListener('click', (e) => {
                 dropOff();
                 dataSet.activeMainChoose = idx;
+                dataSet.activeDay = 0;
                 setContent();
             });
         });
