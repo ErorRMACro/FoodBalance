@@ -1057,6 +1057,24 @@ document.addEventListener('DOMContentLoaded', () => {
         setPrice();
         setChangeMenuItem();
         setChangeActiveDay();
+        tns({
+            container: '#programsData',
+            items: 2,
+            slideBy: 1,
+            loop: false,
+            rewind: true,
+            speed: 500,
+            autoplay: false,
+            mouseDrag: true,
+            nav: false,
+            controlsText: [" ", " "],
+            touch: true,
+                responsive: {
+                  650: {
+                    disable: true
+                  }
+                }
+        });
     };
 
     function dropOff () {
